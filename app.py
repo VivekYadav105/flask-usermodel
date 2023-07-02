@@ -27,6 +27,5 @@ def student_page():
 
 
 if __name__ == "__main__":
-    gunicorn.
     app.run(debug=True,static_folder='/static')
 
