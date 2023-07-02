@@ -1,6 +1,7 @@
 from flask import Flask,request,render_template
 import datetime
 from flask_sqlalchemy import SQLAlchemy
+import gunicorn
 
 
 app = Flask(__name__)
@@ -29,5 +30,6 @@ def student_page():
 
 
 if __name__ == "__main__":
+    gunicorn.
     app.run(debug=True,static_folder='/static')
 
